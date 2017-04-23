@@ -1,2 +1,2 @@
 # sedgewick
-edgewick's algorithms
+Sedgewick's algorithms

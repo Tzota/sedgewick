@@ -1,0 +1,1 @@
+console.log("run \"./node_modules/mocha/bin/mocha tests --recursive\"");

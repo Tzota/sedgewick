@@ -1,0 +1,16 @@
+{
+  "name": "segdewick_algorythms",
+  "version": "1.0.0",
+  "description": "Sedgewick's algorithms",
+  "main": "index.js",
+  "scripts": {
+    "test": "clear && ./node_modules/mocha/bin/mocha tests --recursive",
+    "start": "node index.js"
+  },
+  "author": "Daniyal Guliev",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.5.3"
+  }
+}
