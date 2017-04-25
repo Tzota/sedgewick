@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 var stacker = require('./Stack');
 
 const operators = '+-*/';
@@ -21,41 +21,40 @@ function CompleteLeftBrackets(expression) {
 
         if (is_operator(char)) {
             res.push(char);
-        } else if (char == '(') {
+        } else if (char === '(') {
             brackets++;
             res.push(char);
-        } else if (char == ')') {
-            if (brackets == 0) {
+        } else if (char === ')') {
+            if (brackets === 0) {
                 chars.push(')');
 
                 let operands = 0;
                 let operators = 0;
                 let subbrackets = 0;
-                do
-                {
+                do {
                     let tmp = res.pop();
-                    if (tmp == ')') {
+                    if (tmp === ')') {
                         subbrackets++;
-                    } else if (tmp == '(') {
+                    } else if (tmp === '(') {
                         subbrackets--;
-                        if (subbrackets == 0) {
+                        if (subbrackets === 0) {
                             operands++;
                         }
                     } else if (is_operator(tmp)) {
-                        if (subbrackets == 0) {
+                        if (subbrackets === 0) {
                             operators++;
                         }
                     } else {
-                        if (subbrackets == 0) {
+                        if (subbrackets === 0) {
                             operands++;
                         }
                     }
                     chars.push(tmp);
                 }
-                while(!((operands == 2 && operators == 1) || res.length == 0));
+                while(!((operands === 2 && operators === 1) || res.length === 0));
 
                 chars.push('(');
-                
+
             } else {
                 brackets--;
                 res.push(char);
@@ -65,9 +64,9 @@ function CompleteLeftBrackets(expression) {
         }
     }
 
-    var result = '';
+    let result = '';
     while(res.size() > 0) {
-      result = res.pop().concat(result);
+        result = res.pop().concat(result);
     }
 
     return result;

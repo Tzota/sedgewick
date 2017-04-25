@@ -1,1 +1,2 @@
-console.log("run \"./node_modules/mocha/bin/mocha tests --recursive\"");
+'use strict';
+throw new Error('run "./node_modules/mocha/bin/mocha tests --recursive"');

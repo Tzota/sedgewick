@@ -4,7 +4,7 @@
   "description": "Sedgewick's algorithms",
   "main": "index.js",
   "scripts": {
-    "test": "clear && ./node_modules/mocha/bin/mocha tests --recursive",
+    "test": "mocha tests --recursive",
     "start": "node index.js"
   },
   "author": "Daniyal Guliev",
@@ -12,5 +12,9 @@
   "dependencies": {
     "chai": "^3.5.0",
     "mocha": "^2.5.3"
-  }
+  },
+  "repository" :
+    { "type" : "git"
+      , "url" : "https://github.com/Tzota/sedgewick.git"
+    }
 }

@@ -1,0 +1,46 @@
+{
+    "parserOptions": {
+        "ecmaVersion": 6
+    },
+    "env": {
+        "browser": false,
+        "node": true
+    },
+    "extends": "eslint:recommended",
+    "rules": {
+        "indent": [
+            "error",
+            4
+        ],
+        "linebreak-style": 0,
+        "quotes": [
+            "error",
+            "single"
+        ],
+        "semi": [
+            "error",
+            "always"
+        ],
+        "no-unused-vars": 1,
+        "strict": ["error", "safe"],
+        "vars-on-top": 1,
+        "eqeqeq": 1,
+        "array-bracket-spacing": ["error", "never"],
+        "block-spacing": ["error", "always"],
+        "brace-style": ["error", "1tbs"],
+        "comma-spacing": ["error", { "before": false, "after": true }],
+        "comma-style": ["error", "last"],
+        "func-call-spacing": ["error", "never"],
+        "no-whitespace-before-property": "error",
+        "object-curly-spacing": ["error", "never"],
+        "space-before-blocks": "error",
+        "space-before-function-paren": ["error", "never"],
+        "space-in-parens": ["error", "never"],
+        // "spaced-comment": ["error", "always"], ///<reference не даёт
+        "unicode-bom": "error"
+    },
+    "globals": {
+        "describe": true,
+        "it": true
+    }
+}
