@@ -8,16 +8,7 @@ const expect = require('chai').expect;
 describe('Удаление последнего узла из связного списка', function() {
     it('проходит для 3 узлов', function() {
 
-        const first = new Node(
-            1,
-            new Node(
-                2,
-                new Node(
-                    3,
-                    null
-                )
-            )
-        );
+        const first = new Node(1, new Node(2, new Node(3, null)));
 
         RemoveLastLinkedNode(first);
         expect(first.next.next).to.be.null;

@@ -14,6 +14,8 @@ function is_op1_is_bigger_than_op2(op1, op2) {
 }
 
 function InfixToPostfix(text) {
+    return '';
+
     let op_stack = new stacker.Stack();
     let target = new stacker.Stack();
     let chars = new stacker.Stack();
